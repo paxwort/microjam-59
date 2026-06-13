@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://52ug22qe3v00"]
+
+[resource]
+resource_name = "Material_Terrain"
+cull_mode = 2
+albedo_color = Color(0.90633965, 0.78059417, 0.40337422, 1)
+roughness = 0.5

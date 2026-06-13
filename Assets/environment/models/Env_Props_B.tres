@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b08hsx0j04eac"]
+
+[resource]
+resource_name = "Env_Props_B"
+transparency = 4
+cull_mode = 2
+albedo_color = Color(0.27669218, 0.46834874, 0.210957, 1)
+roughness = 0.5

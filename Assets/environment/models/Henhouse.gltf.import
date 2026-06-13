@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dyacsusyvdlpc"
-path="res://.godot/imported/Level 1 Environment.gltf-0247830ada6730a91d3192ee84dcca50.scn"
+uid="uid://n416nei7kwek"
+path="res://.godot/imported/Henhouse.gltf-a0a2e69feece39e8f5cd44d9c51a7a80.scn"
 
 [deps]
 
-source_file="res://assets/environment/models/Level 1 Environment.gltf"
-dest_files=["res://.godot/imported/Level 1 Environment.gltf-0247830ada6730a91d3192ee84dcca50.scn"]
+source_file="res://assets/environment/models/Henhouse.gltf"
+dest_files=["res://.godot/imported/Henhouse.gltf-a0a2e69feece39e8f5cd44d9c51a7a80.scn"]
 
 [params]
 
@@ -34,7 +34,7 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-materials/extract=2
+materials/extract=1
 materials/extract_format=0
 materials/extract_path=""
 _subresources={}
