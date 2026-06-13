@@ -30,3 +30,6 @@ func _physics_process(_delta: float) -> void:
 	
 func move_to_location(target_position: Vector3) -> void:
 	_navAgent.target_position = target_position
+	
+func is_at_target_location() -> bool:
+	return _navAgent.is_navigation_finished()
