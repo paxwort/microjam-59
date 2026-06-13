@@ -7,12 +7,10 @@ extends CharacterBody3D
 func _ready() -> void:
 	var target = Vector3(10, 0, 5)
 	_movementComponent.move_to_location(target)
-	print_debug("Current health: %s" % _healthComponent.get_health())
 	
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		print_debug("Click detected")
 		var camera: Camera3D = get_viewport().get_camera_3d() 
 		if not camera:
 			push_warning("Point and Click failed: No active Camera3D found in the viewport.")

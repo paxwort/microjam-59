@@ -8,7 +8,6 @@ extends Node3D
 
 func _ready() -> void:
 	parent = get_parent()
-	print_debug(_navAgent.radius)
 
 func _physics_process(_delta: float) -> void:
 	if not parent is CharacterBody3D:

@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://0eheyviiedvo"]
+
+[ext_resource type="Script" uid="uid://cd5q20xiplt08" path="res://Scripts/characters/character_controller.gd" id="1_lvu0w"]
+[ext_resource type="Script" uid="uid://df8mhgdnot34" path="res://Scripts/characters/components/health_component.gd" id="2_j5edr"]
+[ext_resource type="Script" uid="uid://c5p018jgbut74" path="res://Scripts/characters/components/movement_component.gd" id="3_4ahrx"]
+[ext_resource type="Script" uid="uid://b5ub0e6hj1bfj" path="res://Scripts/characters/components/detection_component.gd" id="4_j5edr"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dofil"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0l0s8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lvu0w"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_lvu0w"]
+radius = 10.0
+
+[node name="Node3D" type="Node3D" unique_id=281305702]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=664548436 groups=["Enemies"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("1_lvu0w")
+
+[node name="HealthComponent" type="Node" parent="CharacterBody3D" unique_id=1259452294]
+script = ExtResource("2_j5edr")
+
+[node name="MovementComponent" type="Node3D" parent="CharacterBody3D" unique_id=198029386]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+script = ExtResource("3_4ahrx")
+speed = 0.0
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="CharacterBody3D/MovementComponent" unique_id=507480189]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=218177442]
+shape = SubResource("CapsuleShape3D_dofil")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=470609779]
+mesh = SubResource("CapsuleMesh_0l0s8")
+surface_material_override/0 = SubResource("StandardMaterial3D_lvu0w")
+
+[node name="DetectionComponent" type="Area3D" parent="CharacterBody3D" unique_id=252693936]
+script = ExtResource("4_j5edr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/DetectionComponent" unique_id=36981494]
+shape = SubResource("CylinderShape3D_lvu0w")

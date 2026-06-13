@@ -8,21 +8,23 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_0l0s8"]
 
-[node name="CharacterBody3D" type="CharacterBody3D" unique_id=664548436]
+[node name="Node3D" type="Node3D" unique_id=802232784]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=664548436 groups=["Chickens"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_0l0s8")
 
-[node name="HealthComponent" type="Node" parent="." unique_id=1259452294]
+[node name="HealthComponent" type="Node" parent="CharacterBody3D" unique_id=1259452294]
 script = ExtResource("2_610me")
 
-[node name="MovementComponent" type="Node3D" parent="." unique_id=198029386]
+[node name="MovementComponent" type="Node3D" parent="CharacterBody3D" unique_id=198029386]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 script = ExtResource("3_x080m")
 
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="MovementComponent" unique_id=507480189]
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="CharacterBody3D/MovementComponent" unique_id=507480189]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=218177442]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=218177442]
 shape = SubResource("CapsuleShape3D_dofil")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=470609779]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=470609779]
 mesh = SubResource("CapsuleMesh_0l0s8")
