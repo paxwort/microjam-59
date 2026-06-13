@@ -3,6 +3,8 @@ extends Node3D
 
 @export var SpawnDelay: float = 5
 @export var SpawnCharacters: Array[PackedScene]
+@export var SpawnGroup: String
+@export var MaxSpawnCount: int = 3
 @export var SpawnPoint: Node3D
 
 var _spawnTimer: Timer
@@ -22,5 +24,7 @@ func _spawn_unit() -> void:
 	new_character.global_position = SpawnPoint.global_position
 
 func _can_spawn() -> bool:
-	# TODO: Make sure we don't spawn too many
-	return true
+	var spawn_group_count = get_tree().get_node_count_in_group(SpawnGroup)
+	if spawn_group_count < MaxSpawnCount:
+		return true
+	return false

@@ -33,6 +33,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.700045, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.447417, 0, 0)
 script = ExtResource("4_rm7r0")
 SpawnCharacters = Array[PackedScene]([ExtResource("3_yyx7o")])
+SpawnGroup = "Enemies"
 SpawnPoint = NodePath("SpawnPoint")
 
 [node name="SpawnPoint" type="Node3D" parent="Henhouse" unique_id=1094075986]
