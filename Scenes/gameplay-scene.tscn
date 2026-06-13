@@ -27,4 +27,4 @@ transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.70710
 [node name="Unit1" parent="." unique_id=622480961 instance=ExtResource("2_geme8")]
 
 [node name="Enemy1" parent="." unique_id=281305702 instance=ExtResource("3_yyx7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.901617, 0, -15.364186)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.809011, 0, -13.548244)
