@@ -19,11 +19,6 @@ Prerequisite: ???
 
 - magpie stealing things - maybe a weird controller?
 
-
-
-
-
-
 ## Op1 2: Control animals
 - top down, resource management?
 
