@@ -2,11 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://dyacsusyvdlpc" path="res://Assets/environment/models/Level 1 Environment.gltf" id="1_yyx7o"]
 [ext_resource type="PackedScene" uid="uid://dgqwhhka8on0i" path="res://Prefabs/units/unit1.tscn" id="2_geme8"]
+[ext_resource type="PackedScene" uid="uid://b3gra0kql76md" path="res://Assets/environment/models/Henhouse.gltf" id="3_acu72"]
 [ext_resource type="PackedScene" uid="uid://0eheyviiedvo" path="res://Prefabs/units/enemy1.tscn" id="3_yyx7o"]
+[ext_resource type="Script" uid="uid://di3cg25vf7fs8" path="res://Scripts/game_objects/spawner.gd" id="4_rm7r0"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_2vprq"]
-vertices = PackedVector3Array(18.319153, 0.5, 18.819149, 18.819153, 0.5, 17.569149, 18.569153, 0.5, -18.680851, -18.680847, 0.5, -18.680851, -18.680847, 0.5, 18.569149)
-polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 4), PackedInt32Array(2, 4, 3)]
+vertices = PackedVector3Array(15.037462, 0.36550373, 18.07807, 14.537462, 0.36550373, 18.57807, 18.537462, 0.36550373, 18.57807, 14.787462, 0.36550373, 15.82807, 18.537462, 0.36550373, -18.42193, -18.462538, 0.36550373, 18.57807, 5.787462, 0.36550373, 18.57807, 4.787462, 0.36550373, 17.57807, 4.787462, 0.36550373, 16.57807, 5.287462, 0.36550373, 15.82807, 6.287462, 0.36550373, 15.57807, -18.462538, 0.36550373, -18.42193, -19.462538, 1.6155038, 19.32807, -19.462538, 1.6155038, 19.82807, -18.712538, 1.6155038, 19.82807)
+polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(0, 3, 2), PackedInt32Array(2, 3, 4), PackedInt32Array(7, 6, 5), PackedInt32Array(8, 7, 5), PackedInt32Array(9, 8, 5), PackedInt32Array(9, 5, 10), PackedInt32Array(10, 5, 11), PackedInt32Array(10, 11, 4), PackedInt32Array(4, 3, 10), PackedInt32Array(14, 13, 12)]
 agent_height = 1.0
 agent_radius = 0.4
 agent_max_slope = 20.0
@@ -25,6 +27,13 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 3
 transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 0, 26.886759, 10.571879)
 
 [node name="Unit1" parent="." unique_id=622480961 instance=ExtResource("2_geme8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.700045, 0, 0)
 
-[node name="Enemy1" parent="." unique_id=281305702 instance=ExtResource("3_yyx7o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.809011, 0, -13.548244)
+[node name="Henhouse" parent="." unique_id=823602007 node_paths=PackedStringArray("SpawnPoint") instance=ExtResource("3_acu72")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.447417, 0, 0)
+script = ExtResource("4_rm7r0")
+SpawnCharacters = Array[PackedScene]([ExtResource("3_yyx7o")])
+SpawnPoint = NodePath("SpawnPoint")
+
+[node name="SpawnPoint" type="Node3D" parent="Henhouse" unique_id=1094075986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6073933, 0, 0)
