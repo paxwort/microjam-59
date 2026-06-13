@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cnjfr1najode1" path="res://Scenes/_base_env_lvl_1.tscn" id="1_geme8"]
 [ext_resource type="PackedScene" uid="uid://dgqwhhka8on0i" path="res://Prefabs/units/unit1.tscn" id="2_geme8"]
 [ext_resource type="PackedScene" uid="uid://0eheyviiedvo" path="res://Prefabs/units/enemy1.tscn" id="3_yyx7o"]
+[ext_resource type="PackedScene" uid="uid://drchl100irmh0" path="res://assets/environment/models/FenceInline_A.gltf" id="4_74yhn"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_2vprq"]
 vertices = PackedVector3Array(18.319153, 0.5, 18.819149, 18.819153, 0.5, 17.569149, 18.569153, 0.5, -18.680851, -18.680847, 0.5, -18.680851, -18.680847, 0.5, 18.569149)
@@ -28,3 +29,6 @@ transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.70710
 
 [node name="Enemy1" parent="." unique_id=281305702 instance=ExtResource("3_yyx7o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.809011, 0, -13.548244)
+
+[node name="FenceInline_A" parent="." unique_id=1914192812 instance=ExtResource("4_74yhn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.352003, 0, 7.824259)
