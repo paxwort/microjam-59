@@ -2,12 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://deai5j6qrbk7k"
-<<<<<<< Updated upstream
-path.s3tc="res://.godot/imported/Buildings_A_Normal.png-2fb4d3acc42c999b743bd43abcae9ecb.s3tc.ctex"
-=======
+uid="uid://dns1nqucptd1c"
 path.s3tc="res://.godot/imported/Buildings_A_Normal.png-338085f6d41e60a523319c8f30c667bf.s3tc.ctex"
->>>>>>> Stashed changes
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -15,13 +11,8 @@ metadata={
 
 [deps]
 
-<<<<<<< Updated upstream
-source_file="res://assets/environment/textures/Buildings_A_Normal.png"
-dest_files=["res://.godot/imported/Buildings_A_Normal.png-2fb4d3acc42c999b743bd43abcae9ecb.s3tc.ctex"]
-=======
 source_file="res://Assets/environment/textures/Buildings_A_Normal.png"
 dest_files=["res://.godot/imported/Buildings_A_Normal.png-338085f6d41e60a523319c8f30c667bf.s3tc.ctex"]
->>>>>>> Stashed changes
 
 [params]
 
@@ -36,11 +27,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-<<<<<<< Updated upstream
-roughness/src_normal="res://assets/environment/textures/Buildings_A_Normal.png"
-=======
 roughness/src_normal="res://Assets/environment/textures/Buildings_A_Normal.png"
->>>>>>> Stashed changes
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
