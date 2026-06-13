@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dyacsusyvdlpc"
-path="res://.godot/imported/Level 1 Environment.gltf-0247830ada6730a91d3192ee84dcca50.scn"
+path="res://.godot/imported/Level 1 Environment.gltf-eda146e7abb27eae0cacde511cbedda7.scn"
 
 [deps]
 
-source_file="res://assets/environment/models/Level 1 Environment.gltf"
-dest_files=["res://.godot/imported/Level 1 Environment.gltf-0247830ada6730a91d3192ee84dcca50.scn"]
+source_file="res://Assets/environment/models/Level 1 Environment.gltf"
+dest_files=["res://.godot/imported/Level 1 Environment.gltf-eda146e7abb27eae0cacde511cbedda7.scn"]
 
 [params]
 

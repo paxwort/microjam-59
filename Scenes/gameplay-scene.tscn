@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dac8wafdyx34c"]
+
+[ext_resource type="PackedScene" uid="uid://dyacsusyvdlpc" path="res://Assets/environment/models/Level 1 Environment.gltf" id="1_2vprq"]
+
+[node name="GameplayScene" type="Node3D" unique_id=838132820]
+
+[node name="EnvironmentBase" parent="." unique_id=1440575451 instance=ExtResource("1_2vprq")]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dgqwhhka8on0i"]
+
+[ext_resource type="Script" uid="uid://cd5q20xiplt08" path="res://Scripts/characters/character_controller.gd" id="1_0l0s8"]
+[ext_resource type="Script" uid="uid://df8mhgdnot34" path="res://Scripts/characters/components/health_component.gd" id="2_610me"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dofil"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0l0s8"]
+
+[node name="Unit1" type="Node3D" unique_id=622480961]
+script = ExtResource("1_0l0s8")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=664548436]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=218177442]
+shape = SubResource("CapsuleShape3D_dofil")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=470609779]
+mesh = SubResource("CapsuleMesh_0l0s8")
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1259452294]
+script = ExtResource("2_610me")
