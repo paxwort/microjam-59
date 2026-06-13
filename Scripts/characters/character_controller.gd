@@ -27,3 +27,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		var result = space_state.intersect_ray(query)
 		if result:
 			_movementComponent.move_to_location(result.position)
+
+func take_damage(damage: float) -> void:
+	_healthComponent.remove_health(damage)

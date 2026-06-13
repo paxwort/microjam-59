@@ -19,6 +19,12 @@ config/icon="res://icon.svg"
 Chickens=""
 Enemies=""
 
+[layer_names]
+
+3d_physics/layer_1="Terrain"
+3d_physics/layer_2="CharacterBody"
+3d_physics/layer_3="DamageColliders"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

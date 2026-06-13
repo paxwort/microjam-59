@@ -19,10 +19,12 @@ radius = 10.0
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=664548436 groups=["Enemies"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+collision_layer = 2
 script = ExtResource("1_j5edr")
 
 [node name="HealthComponent" type="Node" parent="CharacterBody3D" unique_id=1259452294]
 script = ExtResource("2_j5edr")
+_baseHealth = 10.0
 
 [node name="MovementComponent" type="Node3D" parent="CharacterBody3D" unique_id=198029386]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
@@ -39,6 +41,8 @@ mesh = SubResource("CapsuleMesh_0l0s8")
 surface_material_override/0 = SubResource("StandardMaterial3D_lvu0w")
 
 [node name="DetectionComponent" type="Area3D" parent="CharacterBody3D" unique_id=252693936]
+collision_layer = 0
+collision_mask = 2
 script = ExtResource("4_j5edr")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/DetectionComponent" unique_id=36981494]

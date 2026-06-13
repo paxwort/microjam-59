@@ -3,7 +3,7 @@ extends Node
 
 signal health_depleted
 
-var _baseHealth:float = 1
+@export var _baseHealth:float = 1
 var _currentHealth:float = 1
 
 func _ready() -> void:

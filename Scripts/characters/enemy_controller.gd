@@ -29,3 +29,6 @@ func _end_pursuit() -> void:
 	_target_player = null
 	_is_in_pursuit = false
 	_movementComponent.move_to_location(global_position)
+
+func take_damage(damage: float) -> void:
+	_healthComponent.remove_health(damage)
