@@ -4,12 +4,21 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://n416nei7kwek"
+<<<<<<< Updated upstream
 path="res://.godot/imported/Henhouse.gltf-a0a2e69feece39e8f5cd44d9c51a7a80.scn"
 
 [deps]
 
 source_file="res://assets/environment/models/Henhouse.gltf"
 dest_files=["res://.godot/imported/Henhouse.gltf-a0a2e69feece39e8f5cd44d9c51a7a80.scn"]
+=======
+path="res://.godot/imported/Henhouse.gltf-f2e0ceaec6a5be006f9122a2624aeb63.scn"
+
+[deps]
+
+source_file="res://Assets/environment/models/Henhouse.gltf"
+dest_files=["res://.godot/imported/Henhouse.gltf-f2e0ceaec6a5be006f9122a2624aeb63.scn"]
+>>>>>>> Stashed changes
 
 [params]
 
@@ -34,7 +43,11 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
+<<<<<<< Updated upstream
 materials/extract=1
+=======
+materials/extract=0
+>>>>>>> Stashed changes
 materials/extract_format=0
 materials/extract_path=""
 _subresources={}

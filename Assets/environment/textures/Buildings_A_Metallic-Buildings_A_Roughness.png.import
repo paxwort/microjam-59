@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b40ux8cved0ry"
+<<<<<<< Updated upstream
 path.s3tc="res://.godot/imported/Buildings_A_Metallic-Buildings_A_Roughness.png-0f6fd2220a6b335c508f50a9452c462d.s3tc.ctex"
+=======
+path.s3tc="res://.godot/imported/Buildings_A_Metallic-Buildings_A_Roughness.png-2c1b115054ed29578becbac4ff365773.s3tc.ctex"
+>>>>>>> Stashed changes
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +15,13 @@ metadata={
 
 [deps]
 
+<<<<<<< Updated upstream
 source_file="res://assets/environment/textures/Buildings_A_Metallic-Buildings_A_Roughness.png"
 dest_files=["res://.godot/imported/Buildings_A_Metallic-Buildings_A_Roughness.png-0f6fd2220a6b335c508f50a9452c462d.s3tc.ctex"]
+=======
+source_file="res://Assets/environment/textures/Buildings_A_Metallic-Buildings_A_Roughness.png"
+dest_files=["res://.godot/imported/Buildings_A_Metallic-Buildings_A_Roughness.png-2c1b115054ed29578becbac4ff365773.s3tc.ctex"]
+>>>>>>> Stashed changes
 
 [params]
 
