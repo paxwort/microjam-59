@@ -2,6 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://dyacsusyvdlpc" path="res://Assets/environment/models/Level 1 Environment.gltf" id="1_2vprq"]
 
+[sub_resource type="NavigationMesh" id="NavigationMesh_2vprq"]
+vertices = PackedVector3Array(18.319153, 0.5, 18.819149, 18.819153, 0.5, 17.569149, 18.569153, 0.5, -18.680851, -18.680847, 0.5, -18.680851, -18.680847, 0.5, 18.569149)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 4), PackedInt32Array(2, 4, 3)]
+agent_height = 1.0
+agent_radius = 0.4
+agent_max_slope = 20.0
+
 [node name="GameplayScene" type="Node3D" unique_id=838132820]
 
-[node name="EnvironmentBase" parent="." unique_id=1440575451 instance=ExtResource("1_2vprq")]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=823872771]
+navigation_mesh = SubResource("NavigationMesh_2vprq")
+
+[node name="_Base_Env_Lvl1" parent="NavigationRegion3D" unique_id=1440575451 instance=ExtResource("1_2vprq")]

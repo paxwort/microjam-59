@@ -14,6 +14,7 @@ func add_health(amountToAdd: float) -> void:
 
 func remove_health(amountToRemove: float) -> void:
 	_currentHealth -= amountToRemove
+	_check_if_dead()
 
 func reset_health() -> void:
 	_currentHealth = _baseHealth
@@ -23,4 +24,5 @@ func get_health() -> float:
 
 func _check_if_dead() -> void:
 	if _currentHealth <= 0:
+		_currentHealth = 0
 		health_depleted.emit()
