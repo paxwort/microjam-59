@@ -3,9 +3,10 @@ extends CharacterBody3D
 
 @onready var _healthComponent: HealthComponent = $HealthComponent
 @onready var _movementComponent: MovementComponent = $MovementComponent
+@onready var _damageComponent: DamageComponent = $DamageComponent
 
 func _ready() -> void:
-	pass
+	_healthComponent.health_depleted.connect(_kill_unit)
 	
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -30,3 +31,6 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func take_damage(damage: float) -> void:
 	_healthComponent.remove_health(damage)
+
+func _kill_unit() -> void:
+	get_parent().queue_free()

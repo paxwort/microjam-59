@@ -11,10 +11,12 @@ var _is_in_pursuit: bool = false
 func _ready() -> void:
 	_target_player = null
 	_is_in_pursuit = false
+	
+	_healthComponent.health_depleted.connect(_kill_unit)
 	_detectionComponent.player_entered_area.connect(_start_pursuit)
 	_detectionComponent.player_lost.connect(_end_pursuit)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if _is_in_pursuit && _target_player:
 		_movementComponent.move_to_location(_target_player.global_position)
 
@@ -32,3 +34,6 @@ func _end_pursuit() -> void:
 
 func take_damage(damage: float) -> void:
 	_healthComponent.remove_health(damage)
+	
+func _kill_unit() -> void:
+	get_parent().queue_free()

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cd5q20xiplt08" path="res://Scripts/characters/character_controller.gd" id="1_0l0s8"]
 [ext_resource type="Script" uid="uid://df8mhgdnot34" path="res://Scripts/characters/components/health_component.gd" id="2_610me"]
 [ext_resource type="Script" uid="uid://c5p018jgbut74" path="res://Scripts/characters/components/movement_component.gd" id="3_x080m"]
-[ext_resource type="Script" uid="uid://puq22qighly" path="res://Scripts/characters/damage_area.gd" id="4_780v2"]
+[ext_resource type="Script" uid="uid://puq22qighly" path="res://Scripts/characters/components/damage_component.gd" id="4_780v2"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dofil"]
 
@@ -17,6 +17,7 @@ radius = 1.864
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=664548436 groups=["Chickens"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_0l0s8")
 
 [node name="HealthComponent" type="Node" parent="CharacterBody3D" unique_id=1259452294]
@@ -34,11 +35,11 @@ shape = SubResource("CapsuleShape3D_dofil")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=470609779]
 mesh = SubResource("CapsuleMesh_0l0s8")
 
-[node name="DamageArea" type="Area3D" parent="CharacterBody3D" unique_id=735773885]
+[node name="DamageComponent" type="Area3D" parent="CharacterBody3D" unique_id=735773885]
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("4_780v2")
 GroupsToAttack = Array[String](["Enemies"])
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/DamageArea" unique_id=1124874809]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/DamageComponent" unique_id=1124874809]
 shape = SubResource("CylinderShape3D_x080m")

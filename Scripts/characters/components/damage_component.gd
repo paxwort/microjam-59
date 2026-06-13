@@ -1,4 +1,4 @@
-class_name DamageArea
+class_name DamageComponent
 extends Area3D
 
 @export var DamageDealt: float = 1
@@ -31,6 +31,9 @@ func _resetAttack() -> void:
 	_canAttack = true
 
 func _attack() -> void:
+	while _enemies_in_area.size() > 0 and not is_instance_valid(_enemies_in_area[0]):
+		_enemies_in_area.pop_front()
+	
 	if _enemies_in_area.size() > 0:
 		var target = _enemies_in_area[0]
 		target.take_damage(DamageDealt)

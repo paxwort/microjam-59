@@ -20,11 +20,12 @@ radius = 10.0
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=664548436 groups=["Enemies"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_j5edr")
 
 [node name="HealthComponent" type="Node" parent="CharacterBody3D" unique_id=1259452294]
 script = ExtResource("2_j5edr")
-_baseHealth = 10.0
+_baseHealth = 3.0
 
 [node name="MovementComponent" type="Node3D" parent="CharacterBody3D" unique_id=198029386]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
