@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cnjfr1najode1"]
+
+[ext_resource type="PackedScene" uid="uid://dyacsusyvdlpc" path="res://Assets/environment/models/Level 1 Environment.gltf" id="1_nbph5"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_qnco7"]
+data = PackedVector3Array(-1, 0, 1, 1, 0, -1, 1, 0, 1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[node name="_Base_Env_Lvl1" unique_id=1440575451 instance=ExtResource("1_nbph5")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Terrain" parent_id_path=PackedInt32Array(1989775850) index="0" unique_id=1576990065]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/StaticBody3D" index="0" unique_id=1928381093]
+shape = SubResource("ConcavePolygonShape3D_qnco7")
