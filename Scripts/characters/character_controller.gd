@@ -5,8 +5,7 @@ extends CharacterBody3D
 @onready var _movementComponent: MovementComponent = $MovementComponent
 
 func _ready() -> void:
-	var target = Vector3(10, 0, 5)
-	_movementComponent.move_to_location(target)
+	pass
 	
 
 func _unhandled_input(event: InputEvent) -> void:

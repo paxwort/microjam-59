@@ -12,8 +12,8 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node3D) -> void:
 	if body.is_in_group("Chickens"):
-		print_debug("Chicken entered area")
+		player_entered_area.emit(body)
 
 func _on_body_exited(body: Node3D) -> void:
 	if body.is_in_group("Chickens"):
-		print_debug("Chicken exited area")
+		player_lost.emit()
