@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dac8wafdyx34c"]
+
+[ext_resource type="PackedScene" uid="uid://dyacsusyvdlpc" path="res://Assets/environment/models/Level 1 Environment.gltf" id="1_2vprq"]
+[ext_resource type="PackedScene" uid="uid://dgqwhhka8on0i" path="res://Prefabs/units/unit1.tscn" id="2_geme8"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_2vprq"]
+vertices = PackedVector3Array(18.319153, 0.5, 18.819149, 18.819153, 0.5, 17.569149, 18.569153, 0.5, -18.680851, -18.680847, 0.5, -18.680851, -18.680847, 0.5, 18.569149)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 4), PackedInt32Array(2, 4, 3)]
+agent_height = 1.0
+agent_radius = 0.4
+agent_max_slope = 20.0
+
+[node name="GameplayScene" type="Node3D" unique_id=838132820]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=823872771]
+navigation_mesh = SubResource("NavigationMesh_2vprq")
+
+[node name="_Base_Env_Lvl1" parent="NavigationRegion3D" unique_id=1440575451 instance=ExtResource("1_2vprq")]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2059041096]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 30.50668, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=382893605]
+transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 0, 26.886759, 10.571879)
+
+[node name="Unit1" parent="." unique_id=622480961 instance=ExtResource("2_geme8")]
