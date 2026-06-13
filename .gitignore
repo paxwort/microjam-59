@@ -1,3 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+.artwork/3D/texturework/
