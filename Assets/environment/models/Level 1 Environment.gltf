@@ -388,14 +388,10 @@
 			"doubleSided":true,
 			"name":"Env_Props_A",
 			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.8000156879425049,
-					0.1315479576587677,
-					0.003567084204405546,
-					1
-				],
-				"metallicFactor":0,
-				"roughnessFactor":0.5
+				"baseColorTexture":{
+					"index":0
+				},
+				"metallicFactor":0
 			}
 		}
 	],
@@ -534,6 +530,19 @@
 					"indices":31
 				}
 			]
+		}
+	],
+	"textures":[
+		{
+			"sampler":0,
+			"source":0
+		}
+	],
+	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"Props_A_Color",
+			"uri":"../textures/Props_A_Color.png"
 		}
 	],
 	"accessors":[
@@ -1140,6 +1149,12 @@
 			"byteLength":192,
 			"byteOffset":16484,
 			"target":34962
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
 		}
 	],
 	"buffers":[

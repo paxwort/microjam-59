@@ -85,8 +85,8 @@
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"Ucupaint Env_Props_A_Paint Color",
-			"uri":"../textures/Ucupaint%20Env_Props_A_Paint%20Color.png"
+			"name":"Props_A_Color",
+			"uri":"../textures/Props_A_Color.png"
 		}
 	],
 	"accessors":[

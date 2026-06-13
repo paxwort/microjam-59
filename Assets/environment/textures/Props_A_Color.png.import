@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb7dm8r0k6a4m"
-path.s3tc="res://.godot/imported/Ucupaint Env_Props_A_Paint Color.png-86c25c8e5a9d6796ba716e42a8a7a58e.s3tc.ctex"
+uid="uid://dpikifvliu11a"
+path.s3tc="res://.godot/imported/Props_A_Color.png-9e6c20641bfa1dba52c9edde1410b504.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/environment/textures/Ucupaint Env_Props_A_Paint Color.png"
-dest_files=["res://.godot/imported/Ucupaint Env_Props_A_Paint Color.png-86c25c8e5a9d6796ba716e42a8a7a58e.s3tc.ctex"]
+source_file="res://assets/environment/textures/Props_A_Color.png"
+dest_files=["res://.godot/imported/Props_A_Color.png-9e6c20641bfa1dba52c9edde1410b504.s3tc.ctex"]
 
 [params]
 

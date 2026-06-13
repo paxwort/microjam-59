@@ -1,9 +1,8 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://43apc6j6ngm4"]
 
-[ext_resource type="Texture2D" uid="uid://cb7dm8r0k6a4m" path="res://assets/environment/textures/Ucupaint Env_Props_A_Paint Color.png" id="1_2w0ab"]
+[ext_resource type="Texture2D" uid="uid://dpikifvliu11a" path="res://assets/environment/textures/Props_A_Color.png" id="1_2w0ab"]
 
 [resource]
 resource_name = "Env_Props_A"
 cull_mode = 2
 albedo_texture = ExtResource("1_2w0ab")
-roughness = 0.5
